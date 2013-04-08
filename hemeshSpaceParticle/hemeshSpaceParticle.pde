@@ -47,8 +47,9 @@ void setup() {
   smooth();
   
   server = new SyphonServer(this, "Poligon Space");
-  toSyphon = createImage(800,600,RGB);
+  toSyphon = createImage(800,600,ARGB);
   
+  //create shape
   createHemesh();
 
   render=new WB_Render(this);
@@ -70,10 +71,15 @@ void setup() {
 
 void draw() {
   background(0,0);
-  directionalLight(220, 220, 180, 1, 1, -1);
-  directionalLight(50, 80, 120, -1, -1, -1);
   
-  // draw boxes
+ // lightSpecular(100, 100, 100);
+  directionalLight(220, 220, 180, 1, 1, -1);
+ // specular(155, 155, 155);
+  directionalLight(50, 80, 120, -1, -1, -1);
+  //ambientLight(153, 102, 0);
+  //ambient(51, 26, 0);
+  
+  // draw class shape
   for(int i=0; i<BLOCK_NUM; i++)
     blocks[i].draw();
     
@@ -90,5 +96,12 @@ void draw() {
     
 }
 
+public void stop() {
+  server.stop();
+} 
+
+void mousePressed() {
+  saveFrame("spaceParticle-###.png");
+}
 
 

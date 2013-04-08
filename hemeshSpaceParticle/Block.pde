@@ -22,9 +22,8 @@ class Block {
         
         if (abs(actualZoom - zoom) > 1)   { actualZoom = 0.99 * actualZoom + 0.01 * zoom; }
         scale(actualZoom);
-        
+        //draw shape
         drawHemesh(z);
-
         popMatrix();
         
         t++;
@@ -38,10 +37,10 @@ class Block {
     y = cos(deg)*dist;
     z = FAR_Z;
     t = 0;
-    rotX=random(.025);
-    rotY=random(.025);
-    rotZ=random(.025);
-    speed=random(8.0, 30.0);
+    rotX=random(.035);
+    rotY=random(.035);
+    rotZ=random(.035);
+    speed=random(8.0, 60.0);
     size=random(SIZE/4, SIZE);
   }
 }

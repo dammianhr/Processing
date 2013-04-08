@@ -13,6 +13,7 @@ void drawHemesh(float z){
         
   if(faceOn){
     noStroke();
+    //fill(255);
     fill(constrain(abs(FAR_Z-z)/10.0, 0, 255),transparency);
     render.drawFaces(myShape);
   }

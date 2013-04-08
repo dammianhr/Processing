@@ -35,7 +35,7 @@ public class ControlFrame extends PApplet {
     frameRate(25);
     cp5 = new ControlP5(this);
     cp5.addToggle("face On").plugTo(parent,"faceOn").setPosition(10,10).setSize(20,20).setValue(true);
-    cp5.addToggle("edge On").plugTo(parent,"edgeOn").setPosition(50,10).setSize(20,20).setValue(true);
+    cp5.addToggle("edge On").plugTo(parent,"edgeOn").setPosition(50,10).setSize(20,20).setValue(false);
     cp5.addSlider("Edge Weight").plugTo(parent,"edgeWeight").setPosition(10,50).setWidth(70).setRange(1,10).setValue(1).setNumberOfTickMarks(10).setSliderMode(Slider.FLEXIBLE);
     cp5.addSlider("zoom").plugTo(parent,"zoom").setPosition(10,70).setWidth(70).setRange(1,50).setValue(20);
     cp5.addSlider("transparency").plugTo(parent,"transparency").setPosition(10,90).setWidth(70).setRange(0,255).setValue(255);
