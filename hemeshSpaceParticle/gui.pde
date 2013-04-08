@@ -10,7 +10,7 @@ void gui(){
   cp5 = new ControlP5(this);
   //cp5.setAutoDraw(true);
   
-   cf = addControlFrame("extra", 440,150);
+   cf = addControlFrame("Control GUI", 440,150);
 }
 
 ControlFrame addControlFrame(String theName, int theWidth, int theHeight) {
