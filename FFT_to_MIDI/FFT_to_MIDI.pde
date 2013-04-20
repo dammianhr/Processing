@@ -81,7 +81,7 @@ void draw(){
     float value = map(alto , 0, 200, 0, 127);
     int channel = 0;
     int number = 16+i;
-    if(togg[i].getState()) myBus.sendControllerChange(channel,number, int(alto)); // Send a controllerChange
+    if(togg[i].getState() && on.getState()) myBus.sendControllerChange(channel,number, int(alto)); // Send a controllerChange
   }
 
   // now draw current spectrum in brighter blue
