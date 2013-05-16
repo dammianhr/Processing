@@ -1,3 +1,19 @@
+/*
+a compilation and updating of sketches found on the web
+
+source:
+https://www.duration.cc
+https://github.com/YCAMInterlab/Duration
+
+https://forum.processing.org/topic/duration-timeline-osc
+
+https://github.com/dammianhr/Duration_ProcessingListener
+
+thanks for sharing!
+-------------------*/
+
+
+
 import oscP5.*;
 import netP5.*;
 
